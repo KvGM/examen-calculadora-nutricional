@@ -20,29 +20,31 @@
                     <div class="formRow">
                         <div class="formGroup">
                             <label>Código</label>
-                            <input id="code" type="text" required>
+                            <input id="code" type="text" placeholder="Código del Producto" required
+                                pattern="^[1](\d){2}$">
                             <div class="errorMsg"></div>
                         </div>
                         <div class="formGroup">
                             <label>Nombre</label>
-                            <input id="name" type="text" required>
+                            <input id="name" type="text" placeholder="Nombre del Producto" required
+                                pattern="^[A-z]{3,}$">
                             <div class="errorMsg"></div>
                         </div>
                     </div>
                     <div class="formRow">
                         <div class="formGroup">
                             <label>Grasas</label>
-                            <input id="fat" type="number" required>
+                            <input id="fat" type="number" placeholder="g de grasas por 100g" required min="1">
                             <div class="errorMsg"></div>
                         </div>
                         <div class="formGroup">
                             <label>Hidratos</label>
-                            <input id="hydrates" type="number" required>
+                            <input id="hydrates" type="number" placeholder="g de hidratos por 100g" required min="1">
                             <div class="errorMsg"></div>
                         </div>
                         <div class="formGroup">
                             <label>Proteinas</label>
-                            <input id="protein" type="number" required>
+                            <input id="protein" type="number" placeholder="g de proteínas por 100g" required min="1">
                             <div class="errorMsg"></div>
                         </div>
                     </div>
