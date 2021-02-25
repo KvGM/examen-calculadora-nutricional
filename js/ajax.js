@@ -6,7 +6,12 @@ export async function getProducts(url) {
     return await fetch(url, options)
         .then(response => response.text())
         .then(data => {
-            return JSON.parse(data);
+            let resultado = null;
+            try {
+                return resultado = JSON.parse(data);
+            } catch {
+                return resultado;
+            }
         })
         .catch(error => {
             console.log(error);
