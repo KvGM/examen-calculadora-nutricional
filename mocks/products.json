@@ -1,0 +1,57 @@
+[{
+        "id": "001",
+        "name": "Refresco",
+        "grasas": "3",
+        "hidratos": "20",
+        "proteinas": "4"
+    },
+    {
+        "id": "002",
+        "name": "Escaldon",
+        "grasas": "7",
+        "hidratos": "25",
+        "proteinas": "13"
+    },
+    {
+        "id": "003",
+        "name": "Gazpacho",
+        "grasas": "2",
+        "hidratos": "15",
+        "proteinas": "20"
+    },
+    {
+        "id": "004",
+        "name": "Queso",
+        "grasas": "5",
+        "hidratos": "22",
+        "proteinas": "11"
+    },
+    {
+        "id": "005",
+        "name": "Arroz",
+        "grasas": "4",
+        "hidratos": "30",
+        "proteinas": "10"
+    },
+    {
+        "id": "006",
+        "name": "Garbanzas",
+        "grasas": "20",
+        "hidratos": "10",
+        "proteinas": "15"
+    },
+    {
+        "id": "007",
+        "name": "Pollo",
+        "grasas": "5",
+        "hidratos": "12",
+        "proteinas": "35"
+    },
+    {
+        "id": "008",
+        "name": "Piña",
+        "grasas": "2",
+        "hidratos": "18",
+        "proteinas": "5"
+    }
+]

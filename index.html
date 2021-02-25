@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Nutricional</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora Nutricional</h1>
+    </header>
+    <main>
+        <nav>
+            <div id="toogleForm">Añadir Alimento</div>
+            <div id="formContainer" class="">
+                <form action="#" novalidate>
+                    <div class="formRow">
+                        <div class="formGroup">
+                            <label>Código</label>
+                            <input id="code" type="text" required>
+                            <div class="errorMsg"></div>
+                        </div>
+                        <div class="formGroup">
+                            <label>Nombre</label>
+                            <input id="name" type="text" required>
+                            <div class="errorMsg"></div>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formGroup">
+                            <label>Grasas</label>
+                            <input id="fat" type="number" required>
+                            <div class="errorMsg"></div>
+                        </div>
+                        <div class="formGroup">
+                            <label>Hidratos</label>
+                            <input id="hydrates" type="number" required>
+                            <div class="errorMsg"></div>
+                        </div>
+                        <div class="formGroup">
+                            <label>Proteinas</label>
+                            <input id="protein" type="number" required>
+                            <div class="errorMsg"></div>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <button type="submit" name="button">Añadir</button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <section id="interactive">
+            <section id="availableProducts">
+                <div class="starter">
+                    <button id="startBtn">Iniciar</button>
+                    <img src="./img/loader.gif" alt="">
+                    <div class="error">Error al cargar los productos</div>
+                </div>
+            </section>
+            <section id="consumedProducts">
+
+            </section>
+        </section>
+    </main>
+
+    <template id="productTemp">
+        <div class="product" data-code=""></div>
+    </template>
+    <script type="module" src="./js/main.js"></script>
+    <script src="./lib/jquery-3.5.1.js"></script>
+    <script src="./lib/jquery-ui.js"></script>
+</body>
+
+</html>
