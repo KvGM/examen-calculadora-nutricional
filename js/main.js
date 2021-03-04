@@ -54,18 +54,16 @@ function showProduct(product) {
 
 function sumProperties() {
     console.clear();
-    let fats = 0;
-    let hydrates = 0;
-    let proteins = 0;
-    selectedProducts.forEach(product => {
-        fats += parseInt(product.grasas);
-        hydrates += parseInt(product.hidratos);
-        proteins += parseInt(product.proteinas);
-    })
+    let properties = selectedProducts.reduce((acum, current)=>{
+        acum.fats += parseInt(current.grasas);
+        acum.hydrates += parseInt(current.hidratos);
+        acum.proteins += parseInt(current.proteinas);
+        return acum;
+    },{fats: 0, hydrates: 0, proteins: 0});
     console.log('Información nutricional:');
-    console.log(`Grasas: ${fats}`);
-    console.log(`Hidratos: ${hydrates}`);
-    console.log(`Proteínas: ${proteins}`);
+    console.log(`Grasas: ${properties.fats}`);
+    console.log(`Hidratos: ${properties.hydrates}`);
+    console.log(`Proteínas: ${properties.proteins}`);
 }
 
 function loader(zone, option) {
